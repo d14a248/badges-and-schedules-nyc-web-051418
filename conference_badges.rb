@@ -1,3 +1,5 @@
+require "pry"
+
 def badge_maker(name)
   "Hello, my name is #{name}."
 end
@@ -21,6 +23,7 @@ end
 
 def printer
   badges = batch_badge_creator
+  binding.pry
   badges.each do |badge|
     puts badge
   end
