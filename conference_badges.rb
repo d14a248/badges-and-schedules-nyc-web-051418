@@ -21,12 +21,12 @@ def assign_rooms(attendees)
 end
 
 def printer(attendees)
-  badges = batch_badge_creator
+  badges = batch_badge_creator(attendees)
   binding.pry
   badges.each do |badge|
     puts badge
   end
-  rooms = assign_rooms
+  rooms = assign_rooms(attendees)
   rooms.each do |room|
     puts room
   end
